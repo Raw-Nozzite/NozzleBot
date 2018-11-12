@@ -10,7 +10,7 @@ async def ping():
     if botSpeech == 1:
         bot.say("Pong")
     else:
-        bot.Say("I don't play table tennis")
+        bot.Say("I don't play table tennis. I bet you watched the anime.")
 bot = discord.Bot()
 async def on_ready():
     print("Logged in as:")
