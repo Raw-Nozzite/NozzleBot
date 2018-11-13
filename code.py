@@ -4,15 +4,16 @@ import asyncio
 
 with open("discord-token.txt",mode="r") as f:
     token = f.readlines()[0]
+bot = discord.Bot("..")
 
-@command()
-async def ping():
+@bot.command()
+async def ping(ctx):
     botSpeech = random.randint(1,2)
     if botSpeech == 1:
-        bot.say("Pong")
+        await ctx.channel.send("Pong!")
     else:
-        bot.Say("I don't play table tennis. I bet you watched the anime.")
-bot = discord.Bot()
+        await ctx.channel.send("I don't play table tennis. I bet you watched the anime.")
+@bot.event
 async def on_ready():
     print("Logged in as:")
     print(bot.user.name)
