@@ -2,14 +2,15 @@ import discord.ext.commands as discord
 import discord.utils as discordutils
 import random    #Literally only used once
 import asyncio
+blisted = []
 
 with open("discord-token.txt",mode="r") as f:
     token = f.readlines()[0]
 bot = discord.Bot("..")
 
-@bot.command()
+@bot.command()                            
 async def ping(ctx):
-    """Test for bot response"""
+    """Test command for bot responsiveness"""
     botSpeech = random.randint(1,2)
     if botSpeech == 1:
         await ctx.channel.send("Pong!")
