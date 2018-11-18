@@ -15,10 +15,10 @@ async def ping(ctx):
     if botSpeech == 1:
         await ctx.channel.send("Pong!")
     else:
-        await ctx.channel.send("I don't play table tennis. I bet you watched the anime.")
+        await ctx.channel.send("I don't play table tennis. I bet you watched the anime though.")
 
 @bot.command()
-async def lynch_channel(ctx, *args):  
+async def del_channel(ctx, *args):  
     """Instantly deletes a specified channel"""
     if len(args) == 1:
         await bot.get_channel(int(args[0][2:-1])).delete()
@@ -46,6 +46,14 @@ async def kys(ctx):
     """Makes bot leave server"""
     await ctx.channel.send("Guess I'll die then")
     await bot.get_guild(ctx.guild.id).leave()
+
+@bot.command()
+async def roulette(ctx):
+     """Get a surprise!"""
+     with open("randomLine.txt") as f:
+         allLines = f.readlines()
+         await ctx.channel.send(random.choice(allLines))
+
 @bot.event
 async def on_ready():
     print("Logged in as:")
