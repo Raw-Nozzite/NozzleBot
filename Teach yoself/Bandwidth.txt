@@ -1,0 +1,12 @@
+Bandwidth is the term that describes the amount of data that can be transimitted along a communication channel. 
+It relates to the range of frequencies that can be used to carry data.
+The greater the range of frequencies, the greater the volume of data can be trasmitted uring a certain time-frame.
+
+Bandwidth is measured in bits per second (bps) which is how many binary digits per second but measurements are usually taken in Kilobits or Megabits
+per second.
+
+Bandwidth has become a vital measure in assessing the speed of access to the internet. A 28.8Kbps modem will transmit and receive data at up to 28,800 bits
+per second.
+
+Baud rate is measured as groups so one signal can be used to convey 5 bits. The greater the bandwidth (range of frequencies) the higher the bitrate. If the
+data rate of the digital signal is x bits per second then a very good representation can be achieved with a bandwidth of 2x Hz.

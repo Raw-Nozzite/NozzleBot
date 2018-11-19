@@ -1,0 +1,24 @@
+Handshaking and protocols are methods used to ensure that different devices can communicate and that there are sets of rules that everyone
+follows to ensure data is sent and received correctly.
+
+They are needed because:
+- There are so many different transimissions that take place between different types of hardware and software
+- There are so many ways of handling and transmitting data
+- Language differences
+
+Protocols
+------------
+
+Protocols are sets of rules that apply to the transmission of data.
+Examples of protocols include:
+- TCI/IP - The set if rules that govern the transmission of packets of data around the internet
+- HTTP -  The set of rules govern in which way 
+- FTP
+
+The Handshaking Process
+--------------------------------
+
+It is usually a process that takes place when a computer is about to communicate with a foreign device to establish rules for communacation.
+Handshaking may be used to negotiate parameters that are acceptable to equipment and systems at both ends of the communication channel.
+Handshaking makes it possible to connect realtively diverse systems or equipment over a communication channel without the need for human
+intervention to set parametres.
