@@ -20,8 +20,8 @@ async def ping(ctx):
 @bot.command()
 async def del_channel(ctx, *args):  
     """Instantly deletes a specified channel"""
-    if len(args) == 1:
-        await bot.get_channel(int(args[0][2:-1])).delete()
+    if for ctx2 in args:
+        await bot.get_channel(int(ctx2[2:-1])).delete()
     else:
         await ctx.channel.send("Please specify a channel!")
 
